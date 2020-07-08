@@ -1,0 +1,34 @@
+{
+   "author": "Blue Prism Ltd",
+   "background": {
+      "persistent": true,
+      "scripts": [ "background.js" ]
+   },
+   "browser_action": {
+      "default_icon": {
+         "128": "icons/BluePrism_128x128.png",
+         "16": "icons/BluePrism_16x16.png",
+         "32": "icons/BluePrism_32x32.png",
+         "48": "icons/BluePrism_48x48.png"
+      }
+   },
+   "content_scripts": [ {
+      "all_frames": true,
+      "js": [ "crypto-js/crypto-js.js", "crypto-js/core.js", "crypto-js/x64-core.js", "crypto-js/lib-typedarrays.js", "crypto-js/enc-base64.js", "crypto-js/enc-hex.js", "crypto-js/enc-latin1.js", "crypto-js/enc-utf8.js", "crypto-js/enc-utf16.js", "crypto-js/md5.js", "crypto-js/evpkdf.js", "crypto-js/cipher-core.js", "crypto-js/sha256.js", "crypto-js/aes.js", "crypto-js/pad-ansix923.js", "crypto-js/pad-iso10126.js", "crypto-js/pad-iso97971.js", "crypto-js/pad-nopadding.js", "crypto-js/pad-pkcs7.js", "crypto-js/pad-zeropadding.js", "Cryptography/HashAlgorithm.js", "Cryptography/SymmetricAlgorithm.js", "Cryptography/CryptographyProvider.js", "main.js" ],
+      "matches": [ "\u003Call_urls>" ],
+      "run_at": "document_end"
+   } ],
+   "description": "This extension provides connectivity between the browser and Blue Prism.",
+   "icons": {
+      "128": "icons/BluePrism_128x128.png",
+      "16": "icons/BluePrism_16x16.png",
+      "32": "icons/BluePrism_32x32.png",
+      "48": "icons/BluePrism_48x48.png"
+   },
+   "key": "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAoxWdu+rhCyW94iBLiU8uc/kEmzcQ5zaROhhE5BpAlhK8UvFLYn2lUuFLKwwQeOd4SFDhQma5GCneOhbWrUEl+t9ewxoHBjDG3F3KnpO4MJ28brbK6Remb7+sQo7xTCAA/omlPlp2GllfIvGpDC6lWdJonFek8mw41MXCWdxc0blti9yu/AykssFisMvMEnVDyANJ2wY+bvBDWAshuNBNWpgy4CCL3SmXiZpi/14vXhfsoKfx3g7bcobR5AywvsEK9/TQ4Mm5r6qlYxE6awmF+5/y4yt2PBxBMWN5WRqDFOXXUVkFjt07QgdF46eFLsbWyXITr3ZWC7Gkuv60zSjo0wIDAQAB",
+   "manifest_version": 2,
+   "name": "Blue Prism Browser Extension",
+   "permissions": [ "tabs", "\u003Call_urls>" ],
+   "update_url": "https://clients2.google.com/service/update2/crx",
+   "version": "2.1.0"
+}
